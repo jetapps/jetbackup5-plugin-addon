@@ -1,12 +1,13 @@
 Configuration file:
 - config.ini
-The following parameters should be passed inside the config file - id,name,description,version,author,type
+The following parameters should be passed inside the config file - id,name,description,version,author,type,min_version
 - id | The plugin unique name (A-Za-z0-9)
 - name | The plugin friendly name
 - description | The plugin description
 - version | The plugin version (e.g. 1.0.0)
 - author | The plugin Author
 - type | The plugin type (available types: destination,security,addon)
+- min_version | The JetBackup minimum version that this plugin can be installed on (e.g. 5.0.0)
 
 Executable files:
 - install | will be executed in the plugin installation process
