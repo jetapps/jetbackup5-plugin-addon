@@ -6,9 +6,10 @@ The following parameters should be passed inside the config file - id,name,descr
 - description | The plugin description
 - version | The plugin version (e.g. 1.0.0)
 - author | The plugin Author
-- type | The plugin type (available types: destination,security,addon)
+- type | The plugin type (available types: destination,notification,security,addon)
 - min_version | The JetBackup minimum version that this plugin can be installed on (e.g. 5.0.0)
-
+- experimental (optional) | if this plugin is experimental you can add experimental message that will be displayed for users that using this plugin
+ 
 Executable files:
 - install | will be executed in the plugin installation process
 - uninstall | will be executed in the plugin removal process

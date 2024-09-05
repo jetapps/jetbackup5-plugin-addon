@@ -19,16 +19,17 @@ class HelloWorld implements Addon {
 
 	/**
 	 * Validate all destination fields - throw ValidationException on error
-	 *
+	 * 
+	 * @return void
 	 * @throws ValidationException
 	 */
-	public function validateFields() {
+	public function validateFields():void {
 	}
 
 	/**
 	 * @param object $data
 	 */
-	public function setData($data) {
+	public function setData(object $data):void {
 	}
 
 	/**
@@ -40,14 +41,26 @@ class HelloWorld implements Addon {
 	/**
 	 * @return string
 	 */
-	public function setSerializedData($data) {
+	public function setSerializedData(string $data) {
 	}
 
 	/**
 	 * @param string $directory
 	 *
-	 * @return bool
+	 * @return string
 	 */
 	public function getSerializedData(): string {
+	}
+
+	/**
+	 * @return string[]
+	 */
+	public function protectedFields(): array {
+	}
+
+	/**
+	 * @return void
+	 */
+	public function routineTasks(): void {
 	}
 }
